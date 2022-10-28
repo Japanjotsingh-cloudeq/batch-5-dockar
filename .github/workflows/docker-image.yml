@@ -13,9 +13,7 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    # defaults:
-    #   run:
-    #     working-directory: ../dj-docker.usr/bin/bash
+    
 
 
     steps:
@@ -25,6 +23,7 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - name: run command 
-      run: docker images 
-      # run: docker build -t jap-djangoj . 
+      run:  |
+        cd dj-docker/dockerdj
+        docker build -t jap-djangoj . 
      # run: docker push japanjot15/djangostart:japppppppppp
