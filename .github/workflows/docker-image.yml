@@ -15,7 +15,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./dj-docker/dockerdj/
+        working-directory: ./dj-docker/
 
 
     steps:
@@ -25,5 +25,5 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - name: run command 
-      run: docker build -t jap-djangoj .
+      run: docker build -t jap-djangoj . 
      # run: docker push japanjot15/djangostart:japppppppppp
