@@ -12,9 +12,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-  defaults:
-    run:
-      working-directory: ./assignment 3.1/mainf
+  
+  
+    defaults:
+      run:
+        working-directory: ./assignment 3.1/mainf
 
     steps:
     - name: Login to Docker Hub
